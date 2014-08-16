@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link href="/assets/css/application.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body>
+  <div id="wrap">
+
+
+    <div class="navbar navbar-default navbar-static-top navbar-main">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"><img src="/assets/image/logo.png" alt="logo"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">首页</a></li>
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include JB/pages_list %}
+      </ul>
+    </div>
+    </div>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+          <div class="row">
+            <ul class="col-md-4 list-unstyled">
+              {% assign pages_list = site.categories.about %}
+              {% include JB/pages_list %}
+            </ul>
+
+
+            <ul class="col-md-4 list-unstyled">
+              <li><a href="http://blog.xinshengyin.com/">企业博客</a></li>
+            </ul>
+
+            <ul class="col-md-4 list-unstyled">
+              <li><a>给我们提建议</a></li>
+              <li>关注我们</li>
+            </ul>
+          </div>
+        <p class="text-center text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.author.e-name }} All rights reserved.  </p>
+        <p class="text-center text-muted"> {{ site.author.name }} 版权所有</p>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    {% include JB/analytics %}
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{% for node in pages_list %}
+
+
+  {% if page.url == node.url %}
+    <li class="active"><a href="{{ BASE_PATH }}{{ node.url | pure_url }}" class="active">{{node.title}}</a></li>
+  {% else %}
+    <li><a href="{{ BASE_PATH }}{{ node.url | pure_url }}">{{node.title}}</a></li>
+  {% endif %}
+
+
+{% endfor %}
+
+{% assign pages_list = nil %}
