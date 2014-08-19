@@ -1,63 +1,24 @@
-
-code {
-  display: inline;
-}
-
-
-/* posts index */
-.post > h3.title {
-  position: relative;
-  padding-top: 10px; }
-
-.post > h3.title span.date {
-  position: absolute;
-  right: 0;
-  font-size: 0.9em; }
-
-.post > .more {
-  margin: 10px 0;
-  text-align: left; }
-
-/* post-full*/
-.post-full .date {
-  margin-bottom: 20px;
-  font-weight: bold; }
-
-/* tag_box */
-.tag_box {
-  list-style: none;
+/*
+ *  文章列表
+**/
+ul.posts, ul.posts li {
+  list-style: none outside none;
   margin: 0;
-  overflow: hidden; }
-
-.tag_box li {
-  line-height: 28px; }
-
-.tag_box li i {
-  opacity: 0.9; }
-
-.tag_box.inline li {
-  float: left; }
-
-.tag_box a {
-  padding: 3px 6px;
-  margin: 2px;
-  background: #eee;
-  color: #555;
-  border-radius: 3px;
-  text-decoration: none;
-  border: 1px dashed #cccccc; }
-
-.tag_box a span {
-  vertical-align: super;
-  font-size: 0.8em; }
-
-.tag_box a:hover {
-  background-color: #e5e5e5; }
-
-.tag_box a.active {
-  background: #57A957;
-  border: 1px solid #4c964d;
-  color: #FFF; }
+  padding: 0;
+}
+ul.posts li {
+  margin-bottom: 20px;
+}
+ul.posts .datetime {
+  color: #999;
+  display: inline-block;
+  float: right;
+  font-size: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  width: 130px;
+}
 
 /* footer */
 footer p {
@@ -74,26 +35,3 @@ footer p {
   height: 80px;
 }
 
-/* 轮播自定义 */
-.carousel-caption {
-  top: 20%;
-}
-.carousel-caption h1 {
-  font-size: 45px;
-  color: #333;
-  line-height: 150%;
-}
-.carousel-caption h1 b {
-  font-size: 45px;
-  color: #61d2dc;
-}
-.carousel-caption h1 small {
-  font-size: 30px;
-  color: #333;
-}
-.carousel-caption h2 {
-  font-size: 20px;
-  color: #333;
-  line-height: 150%;
-  font-weight: normal;
-}

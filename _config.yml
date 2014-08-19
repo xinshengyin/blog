@@ -13,10 +13,11 @@ production_url : http://www.xinshengyin.com
 navigation:
  - url: /index.html
    title: 首页
- - url: /about/index.html
-   title: 关于我
  - url: /category/index.html
    title: 分类
+ - url: /about/index.html
+   title: 关于我
+
 
 author :
   name : 宜昌新声音科技有限公司
