@@ -1,6 +1,6 @@
 ---
-layout: post
 title: 基于Rack的项目初始化
+layout: post
 ---
 
 ## 1.加载的文件
