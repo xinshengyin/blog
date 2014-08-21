@@ -1,4 +1,4 @@
-###### Git常用命令概览
+# Git常用命令概览
 
 ### 阅读帮助
 -   `<repository>` 远程版本库
@@ -86,5 +86,3 @@
 
 -   `git stash` 暂存本地改动，可通过`git stash list`查看已暂存的列表，git pull之后通过`git stash pop`恢复
 -   `git reset --hard` 不保留本地改动
-
-
