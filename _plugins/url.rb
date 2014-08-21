@@ -9,6 +9,10 @@ module Jekyll
       end
     end
 
+    def date_to_human(time)
+      time.getlocal.strftime "%Y-%m-%d"
+    end
+
   end
 end
 

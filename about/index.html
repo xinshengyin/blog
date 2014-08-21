@@ -5,24 +5,10 @@ group: navigation
 ---
 
 
-<div class="row">
-  <div class="col-md-12">
+<div class="container">
 
-  {% for post in site.posts limit:number_of_excerpts %}
-  <div class="well post">
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-  {{ post.excerpt | markdownify }}
-
-  <p><a href="{{ post.url }}">{{ news.continue }}</a></p>
-
-  <p class="post-info">{{ post.date | date_to_string | posted_by:post.author }}</p>
+  <div class="well">
+    学中医6年，放弃；从产品经理2年，放弃；从ruby程序员至今。
   </div>
-  {% endfor %}
 
-  </div>
 </div>
-
-
-
-
