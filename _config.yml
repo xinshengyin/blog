@@ -3,7 +3,7 @@ exclude: [".ruby-version", "README.md", "Rakefile"]
 encoding: UTF-8
 
 permalink: /:categories/:title  # url格式
-markdown: rdiscount  # markdown引擎
+markdown: redcarpet  # markdown引擎
 highlighter: pygments
 
 title: 新声音
@@ -37,7 +37,3 @@ JB :
    tags_path : /tags.html
    atom_path : /atom.xml
    rss_path : /rss.xml
-
-
-
-  
