@@ -1,8 +1,7 @@
 ---
+title: Rails中间件
 layout: post
 category: skill
-
-title: Rails中间件
 tags: [ruby, rails, middleware]
 ---
 
