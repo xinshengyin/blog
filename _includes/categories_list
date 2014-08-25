@@ -1,0 +1,10 @@
+
+{% for category in categories_list %}
+	<li><a href="{{ BASE_PATH }}{{ category[0] }}.html">
+		{{ category[0] | join: "/" }}
+	</a>
+  </li>
+{% endfor %}
+
+
+{% assign categories_list = nil %}

@@ -1,6 +1,7 @@
 ---
 title: 基于Rack的项目初始化
 layout: post
+category: ruby
 ---
 
 ## 1.加载的文件
