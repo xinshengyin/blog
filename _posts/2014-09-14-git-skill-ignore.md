@@ -73,6 +73,8 @@ H 404.html
 
 `git ls-files -v`是`-t`的升级版，对应小写字母则表示这个文件是否被临时忽略。
 
+有结就有解，继续跟踪的命令是：`git update-index --no-assume-unchanged <file>`
+
 ### 永久忽略
 
 永久忽略一般大家都知道，主要就是`.gitignore`的配置，这个配置分为三个级别：
