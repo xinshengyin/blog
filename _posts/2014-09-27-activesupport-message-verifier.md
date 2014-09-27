@@ -1,8 +1,8 @@
- ---
- title: ActiveSupport宝藏之MessageVerifier
- layout: post
- category: ruby
- ---
+---
+title: ActiveSupport宝藏之MessageVerifier
+layout: post
+category: ruby
+---
 
 rails的`ActiveSupport`组件提供了很多非常有用的小功能，如果善于利用的话，可以使我们在实际项目中减少很多重复造轮子的事情。
 今天我们介绍的主角就是：`MessageVerifier`,`MessageVerifier` 提供了加密和解密消息的功能，可以有效的防止信息被伪造。
