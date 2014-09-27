@@ -1,7 +1,10 @@
- - 参数：value, 需要加密的内容，可为任何形式的对象，我们需要一个数组包含用户的id及过期时间，[user_id, time]
+---
+title: ruby对象的序列化
+layout: post
+category: ruby
+published: false
+---
 
-#### auth_token 加密算法：
-1. 对value进行序列化，使用`YAML, JSON, Marshal`等，在ruby中示例用法为：
 
 ```ruby
 value = ["123456", 2014-04-09 16:15:03 +0800]
@@ -24,4 +27,4 @@ digest = OpenSSL::HMAC.hexdigest(SHA1, signature, encoded_value)
 
 ```ruby
 "BAhbB0kiCzEyMzQ1NgY6BkVUSXU6CVRpbWUNKI0cgDEXMzwHOgtvZmZzZXRpAoBwOgl6b25lSSIIQ1NUBjsAVA==--88dd7a936efa412c32891a55165b46f52e7b10af"
-``` 
+```
