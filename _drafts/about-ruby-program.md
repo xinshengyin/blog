@@ -6,10 +6,11 @@ class Exam < ActionView::Base
 end
 ```
 - `Exam.superclass`  超类，顶级超类为`BaseObject`
-- `Exam.ancestors` `Exam.included_modules`  类包含的模块（第一个方法包含类本身）
-- `Exam.class_variables`  类的类变量（默认包含继承的类变量，方法参数`false`为不包含继承的类变量）
-- `Exam.constants`  类的常数（默认包含继承的类变量，方法参数`false`为不包含继承的常数）
-- `Exam.instance_methods`  类的实例方法（默认包含继承的类变量，方法参数`false`为不包含继承的实例方法）
+- `Exam.ancestors`  类包含的模块（包含类本身）
+- `Exam.included_modules`  类包含的模块（不包含类本身）
+- `Exam.class_variables`  类的类变量（默认包含继承的类变量，参数`false`为不包含继承的类变量）
+- `Exam.constants`  类的常数（默认包含继承的类变量，参数`false`为不包含继承的常数）
+- `Exam.instance_methods`  类的实例方法（默认包含继承的类变量，参数`false`为不包含继承的实例方法）
 
 
 ### 关于对象
@@ -23,7 +24,3 @@ a = Exam.new
 - `a.methods`  对象包含的方法，通过传递参数可以查看一定范围内的方法，其他几个方法：`private_methods protected_methods public_methods singleton_methods`
 
 ### 关于变量
-
-
-
-

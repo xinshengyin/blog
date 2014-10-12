@@ -6,12 +6,7 @@ published: false
 ---
 
 
-```ruby
-value = ["123456", 2014-04-09 16:15:03 +0800]
-serialize_value = Marshal.dump(value)  # => "\x04\b[\aI\"\v123456\x06:\x06ETIu:\tTime\r(\x8D\x1C\x801\x173<\a:\voffseti\x02\x80p:\tzoneI\"\bCST\x06;\x00T"
-serialize_value = YAML.dump(value)  # => "---\n- '123456'\n- 2014-04-09 16:15:03.202545000 +08:00\n"
-serialize_value = JSON.dump(value)  # => "[\"123456\",\"2014-04-09 16:15:03 +0800\"]"
-```
+
 2. 使用`Base64-encoded`对序列化后的对象进行字节编码，方便数据传输，在ruby中得示例用法为：
 
 ```ruby
