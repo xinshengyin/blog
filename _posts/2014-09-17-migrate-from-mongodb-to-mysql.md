@@ -19,7 +19,7 @@ category: database
 
 完整示例：
 
-```
+```bash
 mongoexport \
 -d status_dev \
 -c users \
@@ -32,20 +32,16 @@ mongoexport \
 ### 导入csv格式数据至mysql
 
 ```sql
-load data infile '~/work/users.csv'  # 为了安全，如果文件路径为根路径，需要使用load data local infile
+load data infile '~/work/users.csv'   -- 为了安全，如果文件路径为根路径，需要使用load data local infile
 into table users
-fields terminated by ',' optionally enclosed by '"' escaped by '"'
-lines terminated by '\r\n';
+fields terminated by ','  -- 字段之间以逗号分隔
+fields enclosed by '"'  -- 字符串以半角双引号包围
+fields escaped by '"'  -- 字符串本身的双引号用"转义，即用两个双引号表示，也有用\转义
+lines terminated by '\r\n'  -- 数据行之间以\r\n分隔
+ignore 1 lines;  -- 另外，第一行标题行需要单独设置。
 ```
 
-里面最关键的部分就是格式参数：
+里面最关键的部分就是格式参数，这个参数是根据RFC4180文档设置的，该文档全称Common Format and MIME Type for Comma-Separated Values (CSV) Files，其中详细描述了CSV格式。
 
-```sql
-fields terminated by ','  # 字段之间以逗号分隔
-fields enclosed by '"'  # 字符串以半角双引号包围
-fields escaped by '"'  # 字符串本身的双引号用"转义，即用两个双引号表示，也有用\转义
-lines terminated by '\r\n'  # 数据行之间以\r\n分隔
-```
-这个参数是根据RFC4180文档设置的，该文档全称Common Format and MIME Type for Comma-Separated Values (CSV) Files，其中详细描述了CSV格式。
 
-另外，第一行标题行需要单独设置。
+
