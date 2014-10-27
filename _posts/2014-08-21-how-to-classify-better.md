@@ -1,7 +1,7 @@
 ---
 title: 解构产品——如何分类
 layout: post
-published: true
+published: false
 ---
 
 ## 分类概说
