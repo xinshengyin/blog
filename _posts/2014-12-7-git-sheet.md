@@ -29,3 +29,8 @@ published: true
 
 ### git commit-tree
 - `git commit-tree <tree> -m <message>`  基于tree对象创建 commit对象
+
+### git cherry-pick
+- `git cherry-pick <commit>` 将其他分支的单次commit合并到当前分支，而不是整个分支合并，也不会扰乱当前分支
+
+### git replace
