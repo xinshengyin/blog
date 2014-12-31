@@ -6,24 +6,27 @@ group: navigation
 
 
 
-<div class="container">
-<div class="jumbotron">
+<div class="ui grid page">
+  <div class="sixteen wide column">
 
-  <p>这个世界，需要倾听</p>
-  <p>也需要一些新的声音</p>
-  <p class="pull-right">——致自己</p>
+    <div class="ui segment">
 
-</div>
+      <p>这个世界，需要倾听</p>
+      <p>也需要一些新的声音</p>
+      <p class="pull-right">——致自己</p>
 
-<div class="well">
-<ul class="posts">
-  {% for post in site.posts %}
-  <li>
-    <small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_human }} </small>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
-</div>
+    </div>
 
+    <div class="ui segment">
+      <ul class="posts">
+        {% for post in site.posts %}
+        <li>
+          <small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_human }} </small>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
 </div>

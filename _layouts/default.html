@@ -15,21 +15,16 @@
 
   <body>
 
-
-  <div class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">新声音</a>
-    </div>
-    <ul class="nav navbar-nav">
-      {% include nav %}
-    </ul>
-  </div>
+  <div class="ui menu secondary main">
+    <a class="item" href="/">新声音</a>
+    {% include nav %}
   </div>
 
-  {{ content }}
+  <div id="main">
+    {{ content }}
+  </div>
 
-  <div class="footer">
+  <div class="" id="footer">
       <div class="container">
       <p class="text-center text-muted">&copy; {{ site.time | date: '%Y' }} www.xinshengyin.com All rights reserved.  </p>
       <p class="text-center text-muted">版权所有</p>
