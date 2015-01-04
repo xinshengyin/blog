@@ -33,6 +33,7 @@ ul.posts .datetime {
 
 .container {
   width: 750px;
+  margin: 0em auto;
 }
 
 /* footer */

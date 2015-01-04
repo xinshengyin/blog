@@ -16,11 +16,13 @@
   <body>
 
   <div class="ui menu secondary main">
-    <a class="item" href="/">新声音</a>
-    {% include nav %}
+    <div class="container">
+      <div class="item title"><b>新声音</b></div>
+      {% include nav %}
+    </div>
   </div>
 
-  <div id="main">
+  <div id="main" class="container">
     {{ content }}
   </div>
 
