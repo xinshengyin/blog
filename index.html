@@ -4,26 +4,19 @@ layout: default
 group: navigation
 ---
 
-
-
 <div class="ui grid">
   <div class="sixteen wide column">
 
-    <div class="ui tertiary segment">
-      <p>这个世界，需要倾听</p>
-      <p>也需要一些新的声音</p>
-      <p class="ui right aligned basic segment">致自己</p>
-    </div>
-
     <div class="ui segment">
-      <ul class="posts">
+      <div class="ui link list">
         {% for post in site.posts %}
-        <li>
-          <small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_human }} </small>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
+        <div class="item">
+          <i class="map marker icon"></i>
+          <div class="content"><a href="{{ post.url }}">{{ post.title }}</a></div>
+          <div class="right floated compact">{{ post.date | date_to_human }}</div>
+        </div>
         {% endfor %}
-      </ul>
+      </div>
     </div>
 
   </div>

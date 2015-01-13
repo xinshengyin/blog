@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/css/semantic.min.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/css/syntax.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=39431539" charset="UTF-8"></script>
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/semantic.min.js"></script>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/css/semantic.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/assets/css/syntax.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=39431539" charset="UTF-8"></script>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/semantic.min.js"></script>
+</head>
 
-  <div class="ui menu secondary main">
-    <div class="container">
-      <div class="item title"><b>新声音</b></div>
-      {% include nav %}
-    </div>
+<body>
+
+  <div class="ui top attached segment">
+    {% include nav.html %}
   </div>
+
+  <div class="ui hidden divider"></div>
 
   <div id="main" class="container">
     {{ content }}
   </div>
 
-  <div class="" id="footer">
+  <div id="footer">
+    <div class="ui divider"></div>
     <div class="ui center aligned segment basic">
       <p class="text-center text-muted">&copy; {{ site.time | date: '%Y' }} www.xinshengyin.com All rights reserved.  </p>
       <p class="text-center text-muted">版权所有</p>
     </div>
   </div>
 
-  </body>
+</body>
+
 </html>
