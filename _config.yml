@@ -1,5 +1,5 @@
 
-exclude: [".ruby-version", "README.md", "Rakefile"]
+exclude: [".ruby-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
 encoding: UTF-8
 
 permalink: /:categories/:title  # url格式
@@ -17,3 +17,7 @@ navigation:
    title: 分类
  - url: /about/index.html
    title: 关于我
+
+collections:
+  category:
+    output: true
