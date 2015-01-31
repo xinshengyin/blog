@@ -1,0 +1,16 @@
+---
+title: 分类浏览
+layout: default
+---
+
+<div class="ui grid">
+  <div class="four wide column">
+    {% include categories_list.html %}
+  </div>
+
+  <div class="twelve wide column">
+    {% assign categories_post = site.posts %}
+    {% include categories_post.html %}
+  </div>
+
+</div>
