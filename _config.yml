@@ -1,9 +1,10 @@
 
+include: ["assets/", "CNAME"]
 exclude: [".ruby-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
 encoding: UTF-8
 
-permalink: /:categories/:title  # url格式
-markdown: redcarpet  # markdown引擎
+permalink: /:categories/:title
+markdown: redcarpet
 highlighter: pygments
 
 title: 新声音

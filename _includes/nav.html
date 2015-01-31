@@ -1,6 +1,8 @@
 <div class="container">
   <div class="ui menu secondary">
-    <div class="item title"><b>新声音</b></div>
+
+    <a class="item title" id="show_sidebar">列表</a>
+
     {% for node in site.navigation %}
 
     {% if page.url == node.url %}
@@ -12,3 +14,7 @@
     {% endfor %}
   </div>
 </div>
+
+<script>
+  $('#show_sidebar').click(function(){$('.left.sidebar').sidebar('toggle')});
+</script>
