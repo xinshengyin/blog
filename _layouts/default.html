@@ -14,25 +14,41 @@
   <script src="/assets/js/semantic.min.js"></script>
 </head>
 
-<body>
+<body class="pushable">
 
-  <div class="ui top attached segment">
-    {% include nav.html %}
-  </div>
+  {% include side_bar.html %}
 
-  <div class="ui hidden divider"></div>
+  <div class="pusher">
 
-  <div id="main" class="">
-    {{ content }}
-  </div>
-
-  <div id="footer">
-    <div class="ui divider"></div>
-    <div class="ui center aligned segment basic">
-      <p class="text-center text-muted">&copy; {{ site.time | date: '%Y' }} www.xinshengyin.com All rights reserved.  </p>
-      <p class="text-center text-muted">版权所有</p>
+    <div class="ui top attached segment">
+      {% include nav.html %}
     </div>
+
+    <div class="ui hidden divider"></div>
+
+    <div id="main" class="">
+      {{ content }}
+    </div>
+
+    <div id="footer">
+      <div class="ui divider"></div>
+      <div class="ui center aligned segment basic">
+        <p class="text-center text-muted">&copy; {{ site.time | date: '%Y' }} www.xinshengyin.com All rights reserved.  </p>
+        <p class="text-center text-muted">版权所有</p>
+      </div>
+    </div>
+
   </div>
+
+  <script>
+    $('#show_sidebar').click(function(){
+      $('.ui.left.sidebar').sidebar('toggle');
+    });
+
+    $('.ui.left.sidebar').sidebar({
+      dimPage: false
+    })
+  </script>
 
 </body>
 

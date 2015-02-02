@@ -3,22 +3,13 @@ title: 首页
 layout: default
 ---
 
-
 <div class="ui grid">
   <div class="sixteen wide column">
-
-    <div class="ui sidebar">
-      {% include side_bar.html %}
+    <h1 class="ui top attached center aligned header">
+      {{ site.posts[0].title }}
+    </h1>
+    <div class="ui attached segment">
+      {{ site.posts[0].content }}
     </div>
-
-    <div class="pusher">
-      <h1 class="ui top attached center aligned header">
-        {{ site.posts[0].title }}
-      </h1>
-      <div class="ui attached segment">
-        {{ site.posts[0].content }}
-      </div>
-    </div>
-
   </div>
 </div>
