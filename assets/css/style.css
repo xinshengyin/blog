@@ -1,6 +1,8 @@
 #main {
-  margin-bottom: 200px;
   height: auto;
+
+  max-width: 800px;
+  margin: 0 auto 200px;
 }
 
 #footer {
@@ -11,4 +13,8 @@
   bottom: 0;
 
   padding-top: 20px;
+}
+
+.pushable > .pusher {
+
 }

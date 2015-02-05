@@ -35,13 +35,12 @@ end
 
 ```
 
-Rails中对日志的处理采用的是“消息-订阅”机制，由两部分组成：
+### 日志功能实现
+
+Rails中对日志的处理采用的是“消息-订阅”机制，各部分组件和功能如下：
 
 * 消息发送：`ActiveSupport::Notifications`
+  - `instrument`: 通知subscribers
+
+
 * 消息订阅：`ActiveSupport::LogSubscriber`
-
-在rails内部，`ActiveRecord，ActionController`均是使用`ActiveSupport::Notifications`来实现对日志的扩展。
-
-### 日志消息的发送：`ActiveSupport::Notifications`
-
-(内容比较深，待续。。。)

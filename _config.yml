@@ -14,8 +14,8 @@ production_url : http://www.xinshengyin.com
 navigation:
  - url: /
    title: 首页
- - url: /technique
-   title: 技术
+ - url: /category
+   title: 分类
  - url: /about
    title: 关于我
 
