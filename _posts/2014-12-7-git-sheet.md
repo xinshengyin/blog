@@ -34,3 +34,7 @@ published: true
 - `git cherry-pick <commit>` 将其他分支的单次commit合并到当前分支，而不是整个分支合并，也不会扰乱当前分支
 
 ### git replace
+
+### 用远程分支覆盖本地
+
+`git reset --hard origin/master`

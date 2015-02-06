@@ -18,3 +18,23 @@
 .pushable > .pusher {
 
 }
+
+.visible + .pusher {
+  position: absolute;
+  right: 260px;
+  left: 0;
+}
+/*.visible.sidebar {*/
+  /*left: 0;*/
+/*}*/
+
+/*.pushable > .sidebar {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: -300px;*/
+  /*bottom: 0;*/
+  /*z-index: 1;*/
+  /*width: 300px;*/
+/*}*/
+
+
