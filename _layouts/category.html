@@ -1,17 +1,23 @@
 ---
-layout: default
+layout: shell
 ---
 
-<div class="page-header text-center">
-<h1>
-{{ page.title }}
-{% if page.tagline %}
-<small>{{page.tagline}}</small>
-{% endif %}
-</h1>
-</div>
-<div class="content">
-  {% include category %}
+{% include categories_list.html %}
+
+<div class="pusher">
+
+  <div class="ui top attached segment">
+    {% include nav.html %}
+  </div>
+
+  <div class="ui hidden divider"></div>
+
+  <div id="main">
+    {{ content }}
+  </div>
+
+  {% include footer.html %}
+
 </div>
 
 
