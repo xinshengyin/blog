@@ -2,20 +2,14 @@
 layout: shell
 ---
 
-{% include side_bar.html %}
-
-<div class="pusher">
-
-  <div class="ui top attached segment">
-    {% include nav.html %}
-  </div>
-
-  <div class="ui hidden divider"></div>
-
-  <div id="main">
-    {{ content }}
-  </div>
-
-  {% include footer.html %}
-
+<div class="ui top attached segment">
+  {% include nav.html %}
 </div>
+
+<div class="ui hidden divider"></div>
+
+<div id="main">
+  {{ content }}
+</div>
+
+{% include footer.html %}

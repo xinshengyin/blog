@@ -5,11 +5,18 @@ layout: default
 
 <div class="ui grid">
   <div class="sixteen wide column">
-    <h1 class="ui top attached center aligned header">
-      {{ site.posts[0].title }}
-    </h1>
-    <div class="ui attached segment">
-      {{ site.posts[0].content }}
+    
+    <div class="ui segment">
+      <div class="ui link list">
+        {% for post in site.posts %}
+        <div class="item">
+          <i class="map marker icon"></i>
+          <div class="content"><a href="{{ post.url }}">{{ post.title }}</a></div>
+          <div class="right floated compact">{{ post.date | date_to_human }}</div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
+
   </div>
 </div>
