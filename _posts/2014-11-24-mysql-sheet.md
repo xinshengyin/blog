@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mysql数据库编码
-published: true
+category: database
 ---
 
 ## 基本概念

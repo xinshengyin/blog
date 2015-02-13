@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rails中的request
+category: ruby
 published: true
 ---
 

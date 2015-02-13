@@ -1,6 +1,7 @@
 ---
 title: 如何写rakefile
 layout: post
+category: ruby
 published: true
 ---
 

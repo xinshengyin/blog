@@ -1,5 +1,6 @@
 ---
 layout: post
+category: git
 title: 如何移除某次提交之前的版本历史
 published: true
 ---

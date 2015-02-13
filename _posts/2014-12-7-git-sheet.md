@@ -1,5 +1,6 @@
 ---
 layout: post
+category: git
 title: Git 不常用的好用的命令
 published: true
 ---

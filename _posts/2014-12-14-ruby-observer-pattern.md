@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 设计模式之观察者模式
+category: ruby
 published: true
 ---
 
