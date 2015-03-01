@@ -2,16 +2,15 @@
 layout: post
 category: git
 title: Git 不常用的好用的命令
-published: true
 ---
 
 
 - `git add -u` 缓存改动过的文件（已跟踪）
 
--  `git commit --amend` 撤销最后一次提交（修改）
+- `git commit --amend` 撤销最后一次提交（修改）
 
--  `git revert <commit>` 撤消指定的提交
--   `git blame <file>` 以列表方式查看指定文件的提交历史
+- `git revert <commit>` 撤消指定的提交
+- `git blame <file>` 以列表方式查看指定文件的提交历史
 
 ### git remote
 - `git remote show <name>` 指定远程版本库更详细的信息

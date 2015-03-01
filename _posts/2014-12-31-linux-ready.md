@@ -2,7 +2,7 @@
 layout: post
 category: linux
 title: linux 系统安装
-published: true
+published: false
 ---
 
 ## 测试

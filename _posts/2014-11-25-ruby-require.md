@@ -2,7 +2,6 @@
 layout: post
 title: require 的故事
 category: ruby
-published: true
 ---
 
 ## 引子
