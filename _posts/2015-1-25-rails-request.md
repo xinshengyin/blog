@@ -23,7 +23,9 @@ request
 request.headers
 # => #<ActionDispatch::Http::Headers:0x007ff849c55a50>
 ```
-与方法`headers`不同，`request.headers`返回的是整个header对象，包含更多的信息
+headers分为：
+`request.headers`
+`response.headers`
 
 ### Params
 

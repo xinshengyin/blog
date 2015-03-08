@@ -11,8 +11,10 @@ title: ObjectSpace介绍
 ```
 
 接下来我就懵了，这个`#<Object:0x007ff53a0e1578>`对象到底是什么，我该如何知道它的本来面目呢。于是我想到了`ObjectSpace`
+
 `ObjectSpace`是ruby的一个核心module，它本来是为ruby的垃圾回收工作提供服务的一个模块，同时提供了方法让我们可以跟踪到ruby中还存活对象。
-每个对象都有一个唯一的`object_id`,`object_id`与内存地址存在一定的映射关系，上例中`0x007ff53a0e1578`就是这个对象内存地址的一个映射，其`object_id`为`0x007ff53a0e1578 / 2 = 70345608858300`
+
+每个对象都有一个唯一的`object_id`,`object_id`与内存地址存在一定的映射关系，上例中`0x007ff53a0e1578`就是这个对象内存地址的一个映射，其`object_id`为`0x007ff53a0e1578 / 2 = 70345608858300`。
 有了`object_id`，ObjectSpace就能帮我们还原这个对象的真实面目了。
 
 ```ruby
