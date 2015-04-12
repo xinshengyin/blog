@@ -9,7 +9,7 @@ title: 理理File/Dir/Pathname（一）
 
 
 | 方法名 | 描述 | 返回结果类型 |
-|--|--|--|
+|---|---|---|
 | `__FILE__` | `__FILE__`是一个关键字，返回当前文件的绝对路径，包含文件名本身 | String |
 | `File.dirname(__FILE__)` | 获取当前文件目录 | String |
 | `Pathname.new(__FILE__)` | 获取当前文件目录 | Pathname |
@@ -19,8 +19,8 @@ title: 理理File/Dir/Pathname（一）
 
 ## 说明：
 ### 关于`Pathname`类
-ruby提供了一个标准库，`pathname`。
 
+ruby提供了一个标准库，`pathname`。
 
 
 ### 调用系统命令
