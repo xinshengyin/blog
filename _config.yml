@@ -20,5 +20,5 @@ navigation:
    title: 关于我
 
 collections:
-  technique:
+  have:
     output: true
