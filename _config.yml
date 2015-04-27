@@ -4,7 +4,6 @@ exclude: [".ruby-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
 encoding: UTF-8
 
 permalink: /:categories/:title
-markdown: kramdown
 highlighter: pygments
 
 title: 新声音
@@ -22,3 +21,7 @@ navigation:
 collections:
   have:
     output: true
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
