@@ -1,4 +1,3 @@
-
 include: ["assets/", "CNAME"]
 exclude: [".ruby-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
 encoding: UTF-8
