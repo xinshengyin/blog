@@ -1,5 +1,5 @@
-include: ["assets/", "CNAME"]
-exclude: [".ruby-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
+include: ['assets/', 'CNAME']
+exclude: ['.ruby-version', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
 encoding: UTF-8
 
 permalink: /:categories/:title
@@ -17,10 +17,6 @@ navigation:
  - url: /about
    title: 关于我
 
-collections:
-  have:
-    output: true
-
 markdown: redcarpet
 redcarpet:
-  extensions: ["tables"]
+  extensions: ['tables']
