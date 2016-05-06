@@ -3,7 +3,6 @@ exclude: ['.ruby-version', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
 encoding: UTF-8
 
 permalink: /:categories/:title
-highlighter: pygments
 
 title: 新声音
 tagline: Site Tagline
@@ -16,7 +15,3 @@ navigation:
    title: 分类
  - url: /about
    title: 关于我
-
-markdown: redcarpet
-redcarpet:
-  extensions: ['tables']

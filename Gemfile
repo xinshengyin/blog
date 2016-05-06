@@ -1,8 +1,6 @@
-source 'https://ruby.taobao.org/'
+source 'https://rubygems.org/'
 
 gem 'jekyll', '3.1.2'
 gem 'mercenary'
-gem 'redcarpet'
-gem 'pygments.rb'
 gem 'json'
 gem 'pry'
