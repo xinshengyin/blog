@@ -2,20 +2,18 @@
 layout: category
 ---
 
-<div class="ui grid">
-  <div class="sixteen wide column">
+<div class="ui basic segment">
 
-    <h1 class="ui top attached center aligned header">
-      {{ page.title }}
+<h1 class="ui top attached center aligned header">
+  {{ page.title }}
 
-      {% if page.tagline %}
-        <small>{{page.tagline}}</small>
-      {% endif %}
-    </h1>
+  {% if page.tagline %}
+    <small>{{page.tagline}}</small>
+  {% endif %}
+</h1>
 
-    <div class="ui attached segment">
-    {{ content }}
-    </div>
+<div class="ui bottom attached segment">
+{{ content }}
+</div>
 
-  </div>
 </div>
