@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何留住用户
-published: true
+published: false
 ---
 
 网站要想把来访者变成消费者，首先是要争取更多的与用户对话的机会。 包括两点：一是留住用户，二是争取与用户进一步对话的机会。

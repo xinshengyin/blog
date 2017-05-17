@@ -6,6 +6,6 @@ published: false
 ---
 
 ## 测试
-```ruby
+```shell
 dpkg-reconfigure locales
 ```

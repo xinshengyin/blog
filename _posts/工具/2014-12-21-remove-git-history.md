@@ -8,7 +8,7 @@ title: 如何移除某次提交之前的版本历史
 
 命令： `git log --pretty=raw`  查看详细的log信息
 
-```ruby
+```
 commit 517e681c92d0055cc14147a47f819bdab7e7b853
 tree bc124180421117c94fb8498f29e28024a34b4eb4
 parent e4b4b22b08c3ee4218416c3d89e05d3ea410d291
@@ -33,13 +33,13 @@ committer qinmingyuan <mingyuan0715@foxmail.com> 1418983765 +0800
 命令：`git commit-tree <tree> -m <message>`  基于tree对象创建 commit对象
 这个命令的返回值是一个commit 对象
 
-```ruby
+```
 5d002707dc6200c3156a19a90e55f332b23b664b
 ```
 
 `git cat-file -p 5d002707dc6200c3156a19a90e55f332b23b664b`
 
-```ruby
+```
 # 返回值
 tree bc124180421117c94fb8498f29e28024a34b4eb4
 author qinmingyuan <mingyuan0715@foxmail.com> 1419175304 +0800
