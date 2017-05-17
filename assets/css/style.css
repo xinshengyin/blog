@@ -4,6 +4,7 @@ header.ui.attached.menu {
 
 .bg1 {
   background-image: url(/assets/img/1.jpg);
+  background-size: cover;
 }
 
 

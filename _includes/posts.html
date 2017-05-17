@@ -1,0 +1,11 @@
+<div class="ui attached segment">
+  <h3 class="ui header">最近文章</h3>
+
+  <div class="ui divided items">
+    {% for post in site.posts %}
+    <div class="item">
+      <a href="{{ post.url }}" class="item">{{ post.title }}</a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
