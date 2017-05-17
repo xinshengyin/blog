@@ -4,7 +4,10 @@
   <div class="ui divided items">
     {% for post in site.posts %}
     <div class="item">
-      <a href="{{ post.url }}" class="item">{{ post.title }}</a>
+      <div class="content">
+        <a href="{{ post.url }}" class="item">{{ post.title }}</a>
+        <span class="ui small right floated label">{{ post.date | date_to_human }}</span>
+      </div>
     </div>
     {% endfor %}
   </div>
